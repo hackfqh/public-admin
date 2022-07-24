@@ -34,5 +34,8 @@ module.exports = {
         changeOrigin: true
       }
     }
+  },
+  configureWebpack: {
+    resolve: { fallback: { path: require.resolve('path-browserify') } }
   }
 }
