@@ -7,7 +7,7 @@
       ref="loginFormRef"
     >
       <div class="title-container">
-        <h3 class="title">用户登录</h3>
+        <h3 class="title">{{ $t('msg.login.title') }}</h3>
       </div>
       <el-form-item prop="username">
         <span class="svg-container">
@@ -42,8 +42,9 @@
         type="primary"
         style="width: 100%; margin-bottom: 30px"
         @click="onHandleLogin"
-        >登录</el-button
+        >{{ $t('msg.login.loginBtn') }}</el-button
       >
+      <div class="tips" v-html="$t('msg.login.desc')"></div>
     </el-form>
   </div>
 </template>
@@ -175,6 +176,18 @@ $cursor: #fff;
       color: $dark_gray;
       cursor: pointer;
       user-select: none;
+    }
+  }
+  .tips {
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+
+    span {
+      &:first-of-type {
+        margin-right: 16px;
+      }
     }
   }
 }

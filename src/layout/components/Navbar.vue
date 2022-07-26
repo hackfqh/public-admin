@@ -3,6 +3,7 @@
     <hanburger class="hamburger-container"></hanburger>
     <breadcrumb class="breadcrumb-container"></breadcrumb>
     <div class="right-menu">
+      <lang-select class="right-menu-item hover-effect"></lang-select>
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
           <el-avatar
@@ -15,11 +16,11 @@
         <template #dropdown>
           <el-dropdown-menu>
             <router-link to="/">
-              <el-dropdown-item> 首页 </el-dropdown-item>
+              <el-dropdown-item> {{ $t('msg.navBar.home') }} </el-dropdown-item>
             </router-link>
-            <el-dropdown-item divided @click="handleLogout"
-              >退出登录</el-dropdown-item
-            >
+            <el-dropdown-item divided @click="handleLogout">{{
+              $t('msg.navBar.logout')
+            }}</el-dropdown-item>
           </el-dropdown-menu>
         </template>
       </el-dropdown>
@@ -32,6 +33,7 @@ import {} from 'vue'
 import { useStore } from 'vuex'
 import Hanburger from '@/components/Hamburger'
 import Breadcrumb from '@/components/Breadcurmb'
+import LangSelect from '@/components/LangSelect'
 
 const store = useStore()
 const handleLogout = () => {
@@ -64,6 +66,17 @@ const handleLogout = () => {
     display: flex;
     align-items: center;
     padding-right: 16px;
+    ::v-deep .right-menu-item {
+      display: inline-block;
+      padding: 0 18px 0 0;
+      font-size: 24px;
+      color: #5a5e66;
+      vertical-align: text-bottom;
+
+      &.hover-effect {
+        cursor: pointer;
+      }
+    }
     ::v-deep .avatar-container {
       cursor: pointer;
       .avatar-wrapper {
