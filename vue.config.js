@@ -30,7 +30,7 @@ module.exports = {
       // 当地址中有 /api 的时候会触发代理机制
       '/api': {
         // 要代理的服务地址
-        target: 'https://mock.apifox.cn/m1/1138619-0-default/',
+        target: 'http://127.0.0.1:4523/m1/1138619-0-default',
         changeOrigin: true
       }
     }
