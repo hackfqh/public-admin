@@ -3,6 +3,7 @@
     <hanburger class="hamburger-container"></hanburger>
     <breadcrumb class="breadcrumb-container"></breadcrumb>
     <div class="right-menu">
+      <screenfull class="right-menu-item hover-effect" />
       <theme-picker class="right-menu-item hover-effect"></theme-picker>
       <lang-select class="right-menu-item hover-effect"></lang-select>
       <el-dropdown class="avatar-container" trigger="click">
@@ -36,6 +37,7 @@ import Hanburger from '@/components/Hamburger'
 import Breadcrumb from '@/components/Breadcurmb'
 import LangSelect from '@/components/LangSelect'
 import ThemePicker from '@/components/ThemePicker'
+import Screenfull from '@/components/Screenfull'
 
 const store = useStore()
 const handleLogout = () => {

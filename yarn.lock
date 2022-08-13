@@ -7199,6 +7199,11 @@
     "ajv-formats" "^2.1.1"
     "ajv-keywords" "^5.0.0"
 
+"screenfull@^6.0.2":
+  "integrity" "sha512-AQdy8s4WhNvUZ6P8F6PB21tSPIYKniic+Ogx0AacBMjKP1GUHN2E9URxQHtCusiwxudnCKkdy4GrHXPPJSkCCw=="
+  "resolved" "https://registry.npmjs.org/screenfull/-/screenfull-6.0.2.tgz"
+  "version" "6.0.2"
+
 "select-hose@^2.0.0":
   "integrity" "sha512-mEugaLK+YfkijB4fx0e6kImuJdCIt2LxCRcbEYPqRGCs4F2ogyfZU5IAZRdjCP8JPq2AtdNoC/Dux63d9Kiryg=="
   "resolved" "https://registry.npmmirror.com/select-hose/-/select-hose-2.0.0.tgz"

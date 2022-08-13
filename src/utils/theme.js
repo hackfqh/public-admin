@@ -20,10 +20,8 @@ export const writeNewStyle = (elNewStyle) => {
 export const generateNewStyle = async (primaryColor) => {
   // 生成色值表
   const colors = generateColors(primaryColor)
-  console.log(colors)
   // 获取 element-plus 样式文件
   let cssText = await getOriginalStyle()
-  console.log(cssText)
   // 遍历生成的样式表 在 css 文件中进行全局替换
   Object.keys(colors).forEach((key) => {
     cssText = cssText.replace(
