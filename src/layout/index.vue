@@ -10,6 +10,7 @@
     <div class="main-container">
       <div class="fixed-header">
         <navbar />
+        <tags-view />
       </div>
       <app-main />
     </div>
@@ -22,6 +23,7 @@ import variables from '../styles/variables.module.scss'
 import Navbar from './components/Navbar.vue'
 import Sidebar from './components/Sidebar'
 import AppMain from './components/AppMain.vue'
+import TagsView from '@/components/TagsView'
 console.log(variables)
 </script>
 
