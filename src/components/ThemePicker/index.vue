@@ -6,7 +6,7 @@
     v-bind="$attrs"
   >
     <el-tooltip :content="$t('msg.navBar.themeChange')">
-      <svg-icon icon="change-theme"></svg-icon>
+      <svg-icon id="guide-theme" icon="change-theme"></svg-icon>
     </el-tooltip>
     <template #dropdown>
       <el-dropdown-menu>

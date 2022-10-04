@@ -1,8 +1,9 @@
 <template>
   <div class="navbar">
     <hanburger class="hamburger-container"></hanburger>
-    <breadcrumb class="breadcrumb-container"></breadcrumb>
+    <breadcrumb id="guide-breadcrumb" class="breadcrumb-container"></breadcrumb>
     <div class="right-menu">
+      <guide class="right-menu-item hover-effect" />
       <header-search class="right-menu-item hover-effect" />
       <screenfull class="right-menu-item hover-effect" />
       <theme-picker class="right-menu-item hover-effect"></theme-picker>
@@ -40,6 +41,7 @@ import LangSelect from '@/components/LangSelect'
 import ThemePicker from '@/components/ThemePicker'
 import Screenfull from '@/components/Screenfull'
 import HeaderSearch from '@/components/HeaderSearch'
+import Guide from '@/components/Guide'
 
 const store = useStore()
 const handleLogout = () => {
